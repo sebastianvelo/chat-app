@@ -1,10 +1,10 @@
-import Stylist, { Color, Hue } from "stylist/Stylist";
+import Stylist, { Color, Cursor, Hue } from "stylist/Stylist";
 
-const PRIMARY_LIGHT: Hue = [Color.INDIGO, 200];
-const PRIMARY: Hue = [Color.INDIGO, 300];
-const PRIMARY_DARK: Hue = [Color.INDIGO, 600];
-const PRIMARY_DARKER: Hue = [Color.INDIGO, 800];
-const PRIMARY_DARKEST: Hue = [Color.INDIGO, 900];
+const PRIMARY_LIGHT: Hue = [Color.GRAY, 50];
+const PRIMARY: Hue = [Color.GRAY, 100];
+const PRIMARY_DARK: Hue = [Color.GRAY, 600];
+const PRIMARY_DARKER: Hue = [Color.GRAY, 800];
+const PRIMARY_DARKEST: Hue = [Color.GRAY, 900];
 
 const LIGHT: Hue = [Color.GRAY, 100];
 const DARK: Hue = [Color.GRAY, 900];
@@ -36,6 +36,9 @@ export const PrimaryDarkTheme = Stylist.builder()
         }
     });
 export const PrimaryHovereableTheme = Stylist.builder()
+    .inMobile({
+        cursor: Cursor.POINTER
+    })
     .hover({
         bgColor: PRIMARY_LIGHT,
         text: {

@@ -4,10 +4,11 @@ export interface ImgProps {
     alt: string;
     src: string;
     style?: StyleSheetBuilder;
+    css?: { [key: string]: string };
 }
 
 const Img: React.FC<ImgProps> = (props: ImgProps) => {
-    return (<img className={props.style?.build()} alt={props.alt} src={props.src} />);
+    return (<img className={props.style?.build()} alt={props.alt} src={props.src} style={props.css} />);
 }
 
 export default Img;

@@ -1,37 +1,30 @@
 import { PrimaryTheme } from "app/styles/Themes";
-import Stylist, { Display, Items, TransitionProperty } from "stylist/Stylist";
-import { ButtonsContainerProps } from "./buttons/ButtonsContainer";
-import HeaderContainer, { HeaderContainerProps } from "./header/HeaderContainer";
-import { NavLinksContainerProps } from "./links/NavLinksContainer";
-import Navigation from "./navigation/Navigation";
+import Stylist, { Color, Display, FontSize, FontWeight } from "stylist/Stylist";
+import NavItem, { NavItemProps } from "./NavItem";
 
 const NavStyle = Stylist.builder()
     .mix(PrimaryTheme)
     .inMobile({
-        display: Display.GRID,
-        grid: {
-            column: {
-                template: 12
-            }
+        display: Display.FLEX,
+        text: {
+            size: FontSize.SM,
+            weight: FontWeight.MEDIUM
         },
-        crossAxis: {
-            items: Items.CENTER
-        },
-        padding: {
-            x: 4,
-            y: 2
-        },
-        transition: [TransitionProperty.ALL, 300]
     })
     .build();
 
-export interface NavProps extends HeaderContainerProps, NavLinksContainerProps, ButtonsContainerProps { }
+const NavCSS = {
+    background: 'linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(198,218,221,1) 33%, rgba(162,195,200,1) 100%, rgba(255,255,255,1) 100%)'
+}
+
+export interface NavProps {
+    items: NavItemProps[];
+}
 
 const Nav: React.FC<NavProps> = (props: NavProps) => {
     return (
-        <nav className={NavStyle}>
-            <HeaderContainer header={props.header} />
-            <Navigation links={props.links} menu={props.menu} />
+        <nav className={NavStyle} style={NavCSS}>
+            {props.items.map((item, index) => (<NavItem {...item} key={index} />))}
         </nav>
     );
 }

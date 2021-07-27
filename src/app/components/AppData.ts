@@ -1,57 +1,33 @@
 import Routes from "app/types/enums/Routes";
-import { FooterProps } from "./footer/Footer";
-import { MainData } from "./main/Main";
+import { MainProps } from "./main/Main";
 import HomePage from "./main/pages/home/HomePage";
 import LoginPage from "./main/pages/login/LoginPage";
 import { NavProps } from "./nav/Nav";
 
 interface AppWidgetData {
     nav: NavProps;
-    main: MainData;
-    footer: FooterProps
+    main: MainProps;
 }
 
 const data: AppWidgetData = {
     nav: {
-        header: 'BestTemplate',
-        links: [
+        items: [
             {
-                pathname: Routes.HOME,
-                label: "Home",
-                active: false
+                label: "File",
             },
             {
-                pathname: Routes.ABOUT,
-                label: "About",
-                active: false
+                label: "Contacts",
             },
             {
-                pathname: Routes.MORE,
-                label: "More",
-                active: false
+                label: "Actions",
             },
             {
-                pathname: Routes.LOGIN,
-                label: "Login",
-                active: false
+                label: "Tools",
+            },
+            {
+                label: "Help",
             },
         ],
-        menu: {
-            items: [
-                {
-                    pathname: Routes.HOME,
-                    label: "Profile",
-                },
-                {
-                    pathname: Routes.HOME,
-                    label: "Settings",
-                },
-            ],
-            toggler: {
-                alt: 'Avatar',
-                src: 'https://picsum.photos/200'
-            }
-        }
     },
     main: {
         pages: [
@@ -65,95 +41,6 @@ const data: AppWidgetData = {
             },
         ]
     },
-    footer: {
-        columns: [
-            {
-                title: 'Title 1',
-                links: [
-                    {
-                        pathname: Routes.HOME,
-                        label: "Link 1"
-                    },
-                    {
-                        pathname: Routes.ABOUT,
-                        label: "Link 2"
-                    },
-                    {
-                        pathname: Routes.MORE,
-                        label: "Link 3"
-                    },
-                    {
-                        pathname: Routes.LOGIN,
-                        label: "Link 4"
-                    }
-                ]
-            },
-            {
-                title: 'Title 2',
-                links: [
-                    {
-                        pathname: Routes.HOME,
-                        label: "Link 1"
-                    },
-                    {
-                        pathname: Routes.ABOUT,
-                        label: "Link 2"
-                    },
-                    {
-                        pathname: Routes.MORE,
-                        label: "Link 3"
-                    },
-                    {
-                        pathname: Routes.LOGIN,
-                        label: "Link 4"
-                    }
-                ]
-            },
-            {
-                title: 'Title 3',
-                links: [
-                    {
-                        pathname: Routes.HOME,
-                        label: "Link 1"
-                    },
-                    {
-                        pathname: Routes.ABOUT,
-                        label: "Link 2"
-                    },
-                    {
-                        pathname: Routes.MORE,
-                        label: "Link 3"
-                    },
-                    {
-                        pathname: Routes.LOGIN,
-                        label: "Link 4"
-                    }
-                ]
-            },
-            {
-                title: 'Title 4',
-                links: [
-                    {
-                        pathname: Routes.HOME,
-                        label: "Link 1"
-                    },
-                    {
-                        pathname: Routes.ABOUT,
-                        label: "Link 2"
-                    },
-                    {
-                        pathname: Routes.MORE,
-                        label: "Link 3"
-                    },
-                    {
-                        pathname: Routes.LOGIN,
-                        label: "Link 4"
-                    }
-                ]
-            }
-        ],
-        copyright: '© Copyright 1998 - 2021. All Rights Reserved.'
-    }
 };
 
 export default data;

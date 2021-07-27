@@ -20,7 +20,7 @@ class Prefixer {
     static map = new Map<string, (k: any) => void>();
 
     static init = () => {
-        if(Prefixer.map.size) return;
+        if (Prefixer.map.size) return;
         console.log(`Prefixer: Initializing`);
         Prefixer.map.set('bg', Prefixer.backgroundPrefixer);
         Prefixer.map.set('bgColor', Prefixer.backgroundColorPrefixer);
@@ -85,6 +85,10 @@ class Prefixer {
     //Common
     private static colorPrefix = (prefix: Prefix, hue?: Hue) => {
         if (!hue) return;
+        if (typeof hue === 'string') {
+            Prefixer.singlePrefix(prefix, hue);
+            return;
+        }
         Prefixer.singlePrefix(prefix, `${hue[0]}${hue[1]}`);
     }
 
@@ -307,6 +311,6 @@ class Prefixer {
         Prefixer.singlePrefix(Prefix.TRANSITION_DURATION, transition[1]);
         Prefixer.unprefixed(transition[2]);
         Prefixer.singlePrefix(Prefix.TRANSITION_DELAY, transition[2]);
-    } 
+    }
 }
 export default Prefixer;
