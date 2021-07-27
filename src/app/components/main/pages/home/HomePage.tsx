@@ -1,5 +1,5 @@
 import { UserLoggedIn } from "app/types/user/User";
-import ChatLists from "./chat-list/ChatLists";
+import ChatLists from "./chat-lists/ChatLists";
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
 

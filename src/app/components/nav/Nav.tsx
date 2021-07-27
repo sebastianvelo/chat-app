@@ -1,6 +1,6 @@
 import { PrimaryTheme } from "app/styles/Themes";
 import Stylist, { Color, Display, FontSize, FontWeight } from "stylist/Stylist";
-import NavItem, { NavItemProps } from "./NavItem";
+import NavItem, { NavItemProps } from "./items/NavItem";
 
 const NavStyle = Stylist.builder()
     .mix(PrimaryTheme)

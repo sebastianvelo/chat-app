@@ -1,6 +1,6 @@
 import { User } from "app/types/user/User";
 import Stylist, { Overflow } from "stylist/Stylist";
-import ChatList from "./ChatList";
+import ChatListContainer from "./chat-list/ChatListContainer";
 
 const ChatListsStyle = Stylist.builder()
     .inMobile({
@@ -30,7 +30,7 @@ const ChatLists: React.FC<ChatListProps> = (props: ChatListProps) => {
     ]
     return (
         <div className={ChatListsStyle} style={ChatListsCSS}>
-            {lists.map((list, index) => <ChatList {...list} key={index} />)}
+            {lists.map((list, index) => <ChatListContainer {...list} key={index} />)}
         </div>
     );
 }

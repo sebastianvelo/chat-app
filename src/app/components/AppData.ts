@@ -14,6 +14,9 @@ const data: AppWidgetData = {
         items: [
             {
                 label: "File",
+                options: [
+                    'Home'
+                ]
             },
             {
                 label: "Contacts",
