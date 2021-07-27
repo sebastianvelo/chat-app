@@ -1,5 +1,5 @@
 import { User } from "app/types/user/User";
-import Stylist, { BoxShadow, Display } from "stylist/Stylist";
+import Stylist, { Display } from "stylist/Stylist";
 import Avatar from "./Avatar";
 import UserContainer from "./UserContainer";
 
@@ -10,7 +10,6 @@ const HeaderStyle = Stylist.builder()
             x: 8
         },
         padding: 5,
-        shadow: BoxShadow.MD,
     })
     .build();
 
@@ -20,7 +19,7 @@ const HeaderCSS = {
 
 export interface HeaderProps {
     user: User;
- }
+}
 
 const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
 

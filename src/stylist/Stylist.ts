@@ -37,7 +37,7 @@ export enum Cursor {
 //----------------------------------------------------------------
 //Color
 export type Shadow =  50 | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900;
-export type Hue = [Color, Shadow] | 'transparent' | 'black' | 'white';
+export type Hue = [Color, Shadow] | SimpleColor;
 export enum Color {
     GRAY = 'gray-',
     RED = 'red-',
@@ -47,6 +47,11 @@ export enum Color {
     INDIGO = 'indigo-',
     PURPLE = 'purple-',
     PINK = 'pink-',
+}
+export enum SimpleColor {
+    BLACK = 'black',
+    WHITE = 'white',
+    TRANSPARENT = 'transparent'
 }
 //----------------------------------------------------------------
 //Alignment
@@ -119,10 +124,10 @@ export type SizeNumber = 0 | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 | 3.5 | 4 | 5 |
 6 | 7 | 8 | 9 | 10 | 11 | 12 | 14 | 16 | 20 | 24 |
 28 | 32 | 36 | 40 | 44 | 48 | 52 | 56 | 60 | 64 | 72 | 80 | 96 | 'px' | 'auto';
 export type WidthValue = SizeNumber | Sizing;
-export type MinWidthValue = 0 | 'full' | 'min' | 'max';
-export type MinHeightValue = 0 | 'full' | 'screen';
-export type MaxWidthValue = SizeNumber | Size | 'min' | 'max' | 'prose';
-export type MaxHeightValue = SizeNumber | 'full' | 'screen';
+export type MinWidthValue = 0 | Sizing.FULL | Sizing.MIN | Sizing.MAX;
+export type MinHeightValue = 0 | Sizing.FULL | Sizing.SCREEN;
+export type MaxWidthValue = SizeNumber | Size | Sizing.MIN | Sizing.MAX | 'prose';
+export type MaxHeightValue = SizeNumber | Sizing.FULL | Sizing.SCREEN;
 export type HeightValue = SizeNumber | Sizing;
 //----------------------------------------------------------------
 //Border

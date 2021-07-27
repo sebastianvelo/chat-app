@@ -1,4 +1,4 @@
-import Stylist, { Color, Cursor, Display, FontSize, FontWeight, Radius } from "stylist/Stylist";
+import Stylist, { Color, Cursor, Display, FontSize, FontWeight, Radius, SimpleColor } from "stylist/Stylist";
 import { ChatListContainerProps } from "./ChatListContainer";
 
 const ChatListStyle = Stylist.builder()
@@ -17,11 +17,10 @@ const ChatListItemStyle = Stylist.builder()
         cursor: Cursor.POINTER,
         padding: {
             x: 6,
-            y: 2
         },
         border: {
             all: [2, Radius.SM],
-            color: 'transparent',
+            color: SimpleColor.TRANSPARENT,
         },
     })
     .hover({

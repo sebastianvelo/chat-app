@@ -1,10 +1,10 @@
 import Stylist, { Color, Cursor, Hue } from "stylist/Stylist";
 
 const PRIMARY_LIGHT: Hue = [Color.GRAY, 50];
-const PRIMARY: Hue = [Color.GRAY, 100];
-const PRIMARY_DARK: Hue = [Color.GRAY, 600];
-const PRIMARY_DARKER: Hue = [Color.GRAY, 800];
-const PRIMARY_DARKEST: Hue = [Color.GRAY, 900];
+const PRIMARY: Hue = [Color.GRAY, 200];
+const PRIMARY_DARK: Hue = [Color.GRAY, 300];
+const PRIMARY_DARKER: Hue = [Color.GRAY, 400];
+const PRIMARY_DARKEST: Hue = [Color.GRAY, 500];
 
 const LIGHT: Hue = [Color.GRAY, 100];
 const DARK: Hue = [Color.GRAY, 900];
@@ -40,7 +40,7 @@ export const PrimaryHovereableTheme = Stylist.builder()
         cursor: Cursor.POINTER
     })
     .hover({
-        bgColor: PRIMARY_LIGHT,
+        bgColor: PRIMARY_DARK,
         text: {
             color: DARK,
         }

@@ -1,14 +1,27 @@
-import { PrimaryHovereableTheme } from "app/styles/Themes";
-import Stylist, { Display } from "stylist/Stylist";
+import { PrimaryHovereableTheme, PrimaryTheme } from "app/styles/Themes";
+import Stylist, { FontSize, Position, Sizing } from "stylist/Stylist";
 
-const NavItemStyle = Stylist.builder()
-    .mix(PrimaryHovereableTheme)
+const NavOptionsStyle = Stylist.builder()
+    .mix(PrimaryTheme)
     .inMobile({
-        display: Display.FLEX,
+        position: Position.ABSOLUTE,
+        width: Sizing.ONE_SIXTH,
+        text: {
+            size: FontSize.XS
+        },
         padding: {
-            x: 4,
             y: 1
         }
+    })
+    .build();
+
+
+const NavOptionStyle = Stylist.builder()
+    .mix(PrimaryHovereableTheme)
+    .inMobile({
+        padding: {
+            x: 4,
+        },
     })
     .build();
 
@@ -18,11 +31,11 @@ export interface NavOptionsProps {
 
 const NavOptions: React.FC<NavOptionsProps> = (props: NavOptionsProps) => {
     return (
-        <div>
+        <div className={NavOptionsStyle}>
             {props.options && props.options.map((option, index) => (
-                <p key={index}>
+                <div className={NavOptionStyle} key={index}>
                     {option}
-                </p>
+                </div>
             ))}
         </div>
     );

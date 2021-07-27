@@ -13,22 +13,38 @@ const data: AppWidgetData = {
     nav: {
         items: [
             {
-                label: "File",
+                label: "Archivo",
+                options: [
+                    'Adjuntar archivo',
+                    'Buscar...',
+                ]
+            },
+            {
+                label: "Contactos",
+                options: [
+                    'Agregar nuevo contacto',
+                    'Buscar...',
+                    'Buscar...',
+                    'Buscar...',
+                ]
+            },
+            {
+                label: "Acciones",
                 options: [
                     'Home'
                 ]
             },
             {
-                label: "Contacts",
+                label: "Herramientas",
+                options: [
+                    'Home'
+                ]
             },
             {
-                label: "Actions",
-            },
-            {
-                label: "Tools",
-            },
-            {
-                label: "Help",
+                label: "Ayuda",
+                options: [
+                    'Home'
+                ]
             },
         ],
     },
