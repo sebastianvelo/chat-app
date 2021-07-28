@@ -1,19 +1,40 @@
 import { User } from "app/types/user/User";
+import Stylist from "stylist/Stylist";
 import Avatar from "../../common/Avatar";
 import UserContainer from "../../common/UserContainer";
 
+const AddresseeAvatarStyle = Stylist.builder()
+    .inMobile({
+        grid: {
+            column: {
+                span: 2
+            }
+        }
+    })
+    .build();
+
+const AddresseeUserStyle = Stylist.builder()
+    .inMobile({
+        grid: {
+            column: {
+                span: 10
+            }
+        }
+    })
+    .build();
+
 export interface AddresseeProps {
-    user: User;
+    addressee: User;
 }
 
 const Addressee: React.FC<AddresseeProps> = (props: AddresseeProps) => {
     return (
         <>
-            <div className='col-span-2'>
-                <Avatar src='https://picsum.photos/200' />
+            <div className={AddresseeAvatarStyle}>
+                <Avatar src={props.addressee.avatar} />
             </div>
-            <div className='col-span-10'>
-                <UserContainer {...props.user} />
+            <div className={AddresseeUserStyle}>
+                <UserContainer {...props.addressee} />
             </div>
         </>
     );

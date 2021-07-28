@@ -1,4 +1,4 @@
-import Stylist, { Color, Cursor, Display, FontSize, Items, TextDecoration } from "stylist/Stylist";
+import Stylist, { Color, Cursor, Display, FontSize, FontWeight, Items, TextDecoration } from "stylist/Stylist";
 
 const UserContainerStyle = Stylist.builder()
     .inMobile({
@@ -18,7 +18,7 @@ const UserContainerStyle = Stylist.builder()
 const NickNameStyle = Stylist.builder()
     .inMobile({
         text: {
-            size: FontSize.XL,
+            weight: FontWeight.MEDIUM,
         },
     })
     .build();
@@ -36,6 +36,7 @@ const InfoStyle = Stylist.builder()
         text: {
             size: FontSize.SM,
             decoration: TextDecoration.UNDERLINE,
+            color: [Color.BLUE, 700]
         },
         cursor: Cursor.POINTER,
     })

@@ -3,7 +3,6 @@ import Page from "app/types/page/Page";
 import React from "react";
 import { Route } from "react-router-dom";
 import Stylist, { TransitionProperty } from "stylist/Stylist";
-import { FooterProps } from "./pages/home/footer/Footer";
 import { HomePageProps } from "./pages/home/HomePage";
 
 const MainStyle = Stylist.builder()
@@ -13,7 +12,7 @@ const MainStyle = Stylist.builder()
     })
     .build();
 
-export interface MainProps extends FooterProps, HomePageProps {
+export interface MainProps extends HomePageProps {
     pages: Page[];
 }
 

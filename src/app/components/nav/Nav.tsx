@@ -5,14 +5,14 @@ const NavStyle = Stylist.builder()
     .inMobile({
         display: Display.FLEX,
         text: {
-            size: FontSize.SM,
+            size: FontSize.XS,
             weight: FontWeight.MEDIUM
         }
     })
     .build();
 
 const NavCSS = {
-    background: 'linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(198,218,221,1) 33%, rgba(162,195,200,1) 100%, rgba(255,255,255,1) 100%)'
+    background: 'rgba(236, 233, 216, 1)'
 }
 
 export interface NavProps {

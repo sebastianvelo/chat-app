@@ -1,2 +1,2 @@
-type OnChange = (key: string, value: string) => void;
+type OnChange = (k: string, v: string) => void;
 export default OnChange;

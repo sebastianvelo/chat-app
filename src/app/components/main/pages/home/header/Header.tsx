@@ -1,5 +1,5 @@
 import { User } from "app/types/user/User";
-import Stylist, { Display } from "stylist/Stylist";
+import Stylist, { Display, Items } from "stylist/Stylist";
 import Avatar from "../common/Avatar";
 import UserContainer from "../common/UserContainer";
 
@@ -9,7 +9,13 @@ const HeaderStyle = Stylist.builder()
         spaceBetween: {
             x: 8
         },
-        padding: 5,
+        padding: {
+            x: 4,
+            y: 3,
+        },
+        crossAxis: {
+            items: Items.STRETCH
+        }
     })
     .build();
 

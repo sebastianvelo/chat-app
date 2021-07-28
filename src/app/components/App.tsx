@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Stylist, { Display, Overflow, Sizing } from "stylist/Stylist";
 import data from "./AppData";
+import Window from "./common/window/Window";
 import Main from "./main/Main";
 import Nav from "./nav/Nav";
 
@@ -21,6 +22,7 @@ const App: React.FC = () => {
 
     return (
         <div className={AppStyle}>
+            <Window header={'Window Live Messenger'} />
             <Nav {...nav} />
             <Main {...main} />
         </div>

@@ -8,7 +8,8 @@ const InputStyle = Stylist.builder()
             color: [Color.GRAY, 900],
         },
         padding: { 
-            y: 1
+            y: 1,
+            x: 2
         },
         width: Sizing.FULL,
         border: {

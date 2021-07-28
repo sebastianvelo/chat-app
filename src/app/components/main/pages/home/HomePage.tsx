@@ -1,6 +1,7 @@
 import { NavProps } from "app/components/nav/Nav";
-import { UserLoggedIn } from "app/types/user/User";
-import ChatLists from "./chat-lists/ChatLists";
+import { User, UserLoggedIn } from "app/types/user/User";
+import { useState } from "react";
+import ConctactLists from "./contact-lists/ContactLists";
 import Chat from "./chat/Chat";
 import Footer, { FooterProps } from "./footer/Footer";
 import Header from "./header/Header";
@@ -11,11 +12,12 @@ export interface HomePageProps extends FooterProps {
 }
 
 const HomePage: React.FC<HomePageProps> = (props: HomePageProps) => {
+    const [addressee, setAddressee] = useState<User>(); 
     return (
         <div>
-            <Chat {...props} />
+            {addressee && <Chat {...props} addressee={addressee} setAddressee={setAddressee} />}
             <Header user={props.userLoggedIn} />
-            <ChatLists contacts={props.userLoggedIn.contacts} />
+            <ConctactLists contacts={props.userLoggedIn.contacts} setAddressee={setAddressee} />
             <Footer ads={props.ads} />
         </div>
     );

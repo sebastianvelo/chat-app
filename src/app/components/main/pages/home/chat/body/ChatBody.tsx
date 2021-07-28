@@ -1,12 +1,9 @@
-import { UserLoggedIn } from "app/types/user/User";
 import Stylist, { Display, Items } from "stylist/Stylist";
-import Addressee from "./Addressee";
+import Addressee, { AddresseeProps } from "./Addressee";
 import Messages from "./Messages";
-import Sender from "./Sender";
+import Sender, { SenderProps } from "./Sender";
 
-export interface ChatBodyProps {
-    userLoggedIn: UserLoggedIn;
-}
+export interface ChatBodyProps extends SenderProps, AddresseeProps {}
 
 const ChatBodyCSS = {
     background: ' linear-gradient(180deg, rgba(140,219,255,1) 0%, rgba(212,242,255,1) 10%, rgba(255,255,255,1) 73%, rgba(213,242,255,1) 100%)',
@@ -31,9 +28,9 @@ const ChatBodyStyle = Stylist.builder()
 const ChatBody: React.FC<ChatBodyProps> = (props: ChatBodyProps) => {
     return (
         <div className={ChatBodyStyle} style={ChatBodyCSS}>
-            <Addressee user={props.userLoggedIn} />
+            <Addressee {...props} />
             <Messages />
-            <Sender userLoggedIn={props.userLoggedIn} />
+            <Sender {...props} />
         </div>
 
     );

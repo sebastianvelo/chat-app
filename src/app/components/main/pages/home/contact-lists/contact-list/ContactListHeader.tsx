@@ -1,7 +1,7 @@
 import Stylist, { Color, Cursor, Display, FontSize, FontWeight, Items } from "stylist/Stylist";
-import { ChatListContainerProps } from "./ChatListContainer";
+import { ContactListContainerProps } from "./ContactListContainer";
 
-const ChatListHeaderStyle = Stylist.builder()
+const ContactListHeaderStyle = Stylist.builder()
     .inMobile({
         display: Display.FLEX,
         spaceBetween: {
@@ -23,7 +23,7 @@ const ChatListHeaderStyle = Stylist.builder()
     })
     .build();
 
-const ChatListTitleStyle = Stylist.builder()
+const ContactListTitleStyle = Stylist.builder()
     .inMobile({
         text: {
             weight: FontWeight.MEDIUM,
@@ -32,7 +32,7 @@ const ChatListTitleStyle = Stylist.builder()
     })
     .build();
 
-const ChatListQuantityStyle = Stylist.builder()
+const ContactListQuantityStyle = Stylist.builder()
     .inMobile({
         text: {
             size: FontSize.XS,
@@ -41,13 +41,13 @@ const ChatListQuantityStyle = Stylist.builder()
     })
     .build();
 
-const ChatListHeader: React.FC<ChatListContainerProps> = (props: ChatListContainerProps) => {
+const ContactListHeader: React.FC<ContactListContainerProps> = (props: ContactListContainerProps) => {
     return (
-        <summary className={ChatListHeaderStyle}>
-            <h1 className={ChatListTitleStyle}>{props.title}</h1>
-            <span className={ChatListQuantityStyle}>({props.items?.length})</span>
+        <summary className={ContactListHeaderStyle}>
+            <h1 className={ContactListTitleStyle}>{props.title}</h1>
+            <span className={ContactListQuantityStyle}>({props.items?.length})</span>
         </summary>
     );
 }
 
-export default ChatListHeader;
+export default ContactListHeader;
