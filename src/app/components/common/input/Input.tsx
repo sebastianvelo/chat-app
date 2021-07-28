@@ -1,23 +1,24 @@
 import OnChange from "app/types/events/OnChange";
-import Stylist, { Color, Radius } from "stylist/Stylist";
+import Stylist, { Color, Radius, Sizing } from "stylist/Stylist";
 
 const InputStyle = Stylist.builder()
     .inMobile({
-        bgColor: [Color.GRAY, 50],
+        bgColor: [Color.BLUE, 50],
         text: { 
             color: [Color.GRAY, 900],
         },
-        padding: {
-            x: 2,
+        padding: { 
+            y: 1
         },
+        width: Sizing.FULL,
         border: {
-            bottom: 2,
+            all: 2,
             color: [Color.GRAY, 400],
             radius: Radius.SM
         },
     })
     .focus({
-        outline: 'outline-none' //FIX THIS
+        outline: 'outline-none' //TODO FIX THIS
     })
     .dark({
         borderColor: [Color.INDIGO, 200],

@@ -1,7 +1,7 @@
 import { User } from "app/types/user/User";
 import Stylist, { Display } from "stylist/Stylist";
-import Avatar from "./Avatar";
-import UserContainer from "./UserContainer";
+import Avatar from "../common/Avatar";
+import UserContainer from "../common/UserContainer";
 
 const HeaderStyle = Stylist.builder()
     .inMobile({

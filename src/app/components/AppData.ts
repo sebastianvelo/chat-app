@@ -23,27 +23,27 @@ const data: AppWidgetData = {
                 label: "Contactos",
                 options: [
                     'Agregar nuevo contacto',
-                    'Buscar...',
-                    'Buscar...',
-                    'Buscar...',
+                    'Eliminar contacto',
+                    'Bloquear contacto',
+                    'Buscar contacto',
                 ]
             },
             {
                 label: "Acciones",
                 options: [
-                    'Home'
+                    'Agregar emoticonos'
                 ]
             },
             {
                 label: "Herramientas",
                 options: [
-                    'Home'
+                    'Preferencias'
                 ]
             },
             {
                 label: "Ayuda",
                 options: [
-                    'Home'
+                    'Buscar...'
                 ]
             },
         ],
@@ -58,7 +58,192 @@ const data: AppWidgetData = {
                 route: Routes.LOGIN,
                 component: LoginPage
             },
-        ]
+        ],
+        chatNav: {
+            items: [
+                {
+                    label: "Archivo",
+                    options: [
+                        'Adjuntar archivo',
+                        'Buscar...',
+                    ]
+                },
+                {
+                    label: "Contactos",
+                    options: [
+                        'Agregar nuevo contacto',
+                        'Eliminar contacto',
+                        'Bloquear contacto',
+                        'Buscar contacto',
+                    ]
+                },
+                {
+                    label: "Acciones",
+                    options: [
+                        'Agregar emoticonos'
+                    ]
+                },
+                {
+                    label: "Herramientas",
+                    options: [
+                        'Preferencias'
+                    ]
+                },
+                {
+                    label: "Ayuda",
+                    options: [
+                        'Buscar...'
+                    ]
+                },
+            ],
+        },
+        userLoggedIn: {
+            avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
+            nick: '[b] Sébástíán...... 😎 [ /b]',
+            status: '(Conectado)',
+            info: 'Una Nueva Noche Fria - CJS!!!!!!! 🎵🎵🎵🎵',
+            contacts: [
+                {
+                    avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
+                    nick: '🟩 ( --- / /// Lorem Pipsum // / /_-- ))',
+                    status: '(Conectado)',
+                    info: 'CUMBIAAAA!!! 🎵',
+                },
+                {
+                    avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
+                    nick: '🟩 ( --- / /// Lorem Pipsum // / /_-- ))',
+                    status: '(Conectado)',
+                    info: 'CUMBIAAAA!!! 🎵',
+                },
+                {
+                    avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
+                    nick: '🟩 ( --- / /// Lorem Pipsum // / /_-- ))',
+                    status: '(Conectado)',
+                    info: 'CUMBIAAAA!!! 🎵',
+                },
+                {
+                    avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
+                    nick: '🟩 ( --- / /// Lorem Pipsum // / /_-- ))',
+                    status: '(Conectado)',
+                    info: 'CUMBIAAAA!!! 🎵',
+                },
+                {
+                    avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
+                    nick: '🟩 ( --- / /// Lorem Pipsum // / /_-- ))',
+                    status: '(Conectado)',
+                    info: 'CUMBIAAAA!!! 🎵',
+                },
+                {
+                    avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
+                    nick: '🟩 ( --- / /// Lorem Pipsum // / /_-- ))',
+                    status: '(Conectado)',
+                    info: 'CUMBIAAAA!!! 🎵',
+                },
+                {
+                    avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
+                    nick: '🟩 ( --- / /// Lorem Pipsum // / /_-- ))',
+                    status: '(Conectado)',
+                    info: 'CUMBIAAAA!!! 🎵',
+                },
+                {
+                    avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
+                    nick: '🟩 ( --- / /// Lorem Pipsum // / /_-- ))',
+                    status: '(Conectado)',
+                    info: 'CUMBIAAAA!!! 🎵',
+                },
+                {
+                    avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
+                    nick: '🟩 ( --- / /// Lorem Pipsum // / /_-- ))',
+                    status: '(Conectado)',
+                    info: 'CUMBIAAAA!!! 🎵',
+                },
+                {
+                    avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
+                    nick: '🟩 ( --- / /// Lorem Pipsum // / /_-- ))',
+                    status: '(Conectado)',
+                    info: 'CUMBIAAAA!!! 🎵',
+                },
+                {
+                    avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
+                    nick: '🟩 ( --- / /// Lorem Pipsum // / /_-- ))',
+                    status: '(Conectado)',
+                    info: 'CUMBIAAAA!!! 🎵',
+                },
+                {
+                    avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
+                    nick: '🟩 ( --- / /// Lorem Pipsum // / /_-- ))',
+                    status: '(Conectado)',
+                    info: 'CUMBIAAAA!!! 🎵',
+                },
+                {
+                    avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
+                    nick: '🟩 ( --- / /// Lorem Pipsum // / /_-- ))',
+                    status: '(Conectado)',
+                    info: 'CUMBIAAAA!!! 🎵',
+                },
+                {
+                    avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
+                    nick: '🟩 ( --- / /// Lorem Pipsum // / /_-- ))',
+                    status: '(Conectado)',
+                    info: 'CUMBIAAAA!!! 🎵',
+                },
+                {
+                    avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
+                    nick: '🟩 ( --- / /// Lorem Pipsum // / /_-- ))',
+                    status: '(Conectado)',
+                    info: 'CUMBIAAAA!!! 🎵',
+                },
+                {
+                    avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
+                    nick: '⬜ ( --- / /// Lorem Pipsum // / /_-- ))',
+                    status: '',
+                    info: 'CUMBIAAAA!!! 🎵',
+                },
+                {
+                    avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
+                    nick: '⬜ ( --- / /// Lorem Pipsum // / /_-- ))',
+                    status: '',
+                    info: 'CUMBIAAAA!!! 🎵',
+                },
+                {
+                    avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
+                    nick: '⬜ ( --- / /// Lorem Pipsum // / /_-- ))',
+                    status: '',
+                    info: 'CUMBIAAAA!!! 🎵',
+                },
+                {
+                    avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
+                    nick: '⬜ ( --- / /// Lorem Pipsum // / /_-- ))',
+                    status: '',
+                    info: 'CUMBIAAAA!!! 🎵',
+                },
+                {
+                    avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
+                    nick: '⬜ ( --- / /// Lorem Pipsum // / /_-- ))',
+                    status: '',
+                    info: 'CUMBIAAAA!!! 🎵',
+                },
+                {
+                    avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
+                    nick: '⬜ ( --- / /// Lorem Pipsum // / /_-- ))',
+                    status: '',
+                    info: 'CUMBIAAAA!!! 🎵',
+                },
+                {
+                    avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
+                    nick: '⬜ ( --- / /// Lorem Pipsum // / /_-- ))',
+                    status: '',
+                    info: 'CUMBIAAAA!!! 🎵',
+                },
+                {
+                    avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
+                    nick: '⬜ ( --- / /// Lorem Pipsum // / /_-- ))',
+                    status: '',
+                    info: 'CUMBIAAAA!!! 🎵',
+                },
+            ]
+        },
+        ads: '¿Querés tu Iphone 3G HOY?!!!!'
     },
 };
 

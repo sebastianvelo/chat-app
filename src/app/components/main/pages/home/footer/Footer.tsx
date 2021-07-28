@@ -45,11 +45,15 @@ const AdsStyle = Stylist.builder()
     })
     .build();
 
-const Footer: React.FC<any> = () => {
+export interface FooterProps {
+    ads: string;
+}
+
+const Footer: React.FC<FooterProps> = (props: FooterProps) => {
     return (
         <footer className={FooterStyle} style={FooterCSS}>
             <div className={AdsStyle}>
-                ¿Querés tu Iphone 3G HOY?!!!!
+                {props.ads}
             </div>
         </footer>
     );

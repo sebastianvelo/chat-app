@@ -1,4 +1,4 @@
-import Stylist, { Display, FontSize, Items } from "stylist/Stylist";
+import Stylist, { Color, Cursor, Display, FontSize, Items, TextDecoration } from "stylist/Stylist";
 
 const UserContainerStyle = Stylist.builder()
     .inMobile({
@@ -31,6 +31,21 @@ const StatusStyle = Stylist.builder()
     })
     .build();
 
+const InfoStyle = Stylist.builder()
+    .inMobile({
+        text: {
+            size: FontSize.SM,
+            decoration: TextDecoration.UNDERLINE,
+        },
+        cursor: Cursor.POINTER,
+    })
+    .hover({
+        text: {
+            color: [Color.BLUE, 600]
+        }
+    })
+    .build();
+
 export interface UserContainerProps {
     nick: string;
     status: string;
@@ -44,7 +59,7 @@ const UserContainer: React.FC<UserContainerProps> = (props: UserContainerProps) 
                 <h1 className={NickNameStyle}>{props.nick}</h1>
                 <h1 className={StatusStyle}>{props.status}</h1>
             </div>
-            <h2>{props.info}</h2>
+            <h2 className={InfoStyle}>{props.info}</h2>
         </div>
     );
 }

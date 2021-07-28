@@ -10,7 +10,7 @@ const AppStyle = Stylist.builder()
         maxHeight: Sizing.SCREEN,
         overflow: Overflow.HIDDEN
     })
-    .inLaptop({
+    .inTablet({
         display: Display.BLOCK,
     })
     .build();
