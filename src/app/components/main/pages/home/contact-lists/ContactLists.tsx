@@ -24,11 +24,11 @@ const ConctactLists: React.FC<ConctactListsProps> = (props: ConctactListsProps) 
     const lists = [
         {
             title: 'Conectados',
-            items: props.contacts?.filter(contact => contact.status)
+            contacts: props.contacts?.filter(contact => contact.status)
         },
         {
             title: 'No conectados',
-            items: props.contacts?.filter(contact => !contact.status)
+            contacts: props.contacts?.filter(contact => !contact.status)
         },
     ]
     return (

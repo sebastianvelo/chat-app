@@ -26,7 +26,6 @@ const ChatStyle = Stylist.builder()
     .build();
 
 export interface ChatProps {
-    chatNav: NavProps;
     userLoggedIn: UserLoggedIn;
     addressee: User;
     openChat: (addressee?: User) => void;
@@ -41,8 +40,7 @@ const Chat: React.FC<ChatProps> = (props: ChatProps) => {
 
     return (
         <div className={ChatStyle}>
-            <Window close={() => props.openChat()} header={props.addressee.nick} />
-            <Nav {...props.chatNav} />
+            <Window close={() => props.openChat()} header={'Windows Live Messenger - ' + props.addressee.nick} />
             <ChatBody {...props} messages={getMessages()} />
         </div>
     );

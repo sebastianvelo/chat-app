@@ -8,7 +8,6 @@ import Header from "./header/Header";
 
 export interface HomePageProps extends FooterProps {
     userLoggedIn: UserLoggedIn;
-    chatNav: NavProps;
 }
 
 const HomePage: React.FC<HomePageProps> = (props: HomePageProps) => {

@@ -4,7 +4,7 @@ import ContactListHeader from "./ContactListHeader";
 
 export interface ContactListContainerProps {
     title: string;
-    items?: User[];
+    contacts?: User[];
     openChat: (user: User) => void;
 }
 

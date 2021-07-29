@@ -46,7 +46,7 @@ const ContactListHeader: React.FC<ContactListContainerProps> = (props: ContactLi
     return (
         <summary className={ContactListHeaderStyle}>
             <h1 className={ContactListTitleStyle}>{props.title}</h1>
-            <span className={ContactListQuantityStyle}>({props.items?.length})</span>
+            <span className={ContactListQuantityStyle}>({props.contacts?.length})</span>
         </summary>
     );
 }

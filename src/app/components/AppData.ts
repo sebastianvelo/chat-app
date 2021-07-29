@@ -59,44 +59,6 @@ const data: AppWidgetData = {
                 component: LoginPage
             },
         ],
-        chatNav: {
-            items: [
-                {
-                    label: "Archivo",
-                    options: [
-                        'Adjuntar archivo',
-                        'Buscar...',
-                    ]
-                },
-                {
-                    label: "Contactos",
-                    options: [
-                        'Agregar nuevo contacto',
-                        'Eliminar contacto',
-                        'Bloquear contacto',
-                        'Buscar contacto',
-                    ]
-                },
-                {
-                    label: "Acciones",
-                    options: [
-                        'Agregar emoticonos'
-                    ]
-                },
-                {
-                    label: "Herramientas",
-                    options: [
-                        'Preferencias'
-                    ]
-                },
-                {
-                    label: "Ayuda",
-                    options: [
-                        'Buscar...'
-                    ]
-                },
-            ],
-        },
         userLoggedIn: {
             avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
             nick: '[b] Sébástíán...... 😎 [ /b]',

@@ -14,8 +14,8 @@ const InputStyle = Stylist.builder()
         width: Sizing.FULL,
         border: {
             all: 2,
-            color: [Color.GRAY, 400],
-            radius: Radius.SM
+            color: [Color.GRAY, 300],
+            radius: Radius.MD
         },
     })
     .focus({

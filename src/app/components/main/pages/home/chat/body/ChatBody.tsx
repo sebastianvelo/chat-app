@@ -3,10 +3,6 @@ import Addressee, { AddresseeProps } from "./Addressee";
 import Messages, { MessagesProps } from "./messages/Messages";
 import Sender, { SenderProps } from "./Sender";
 
-const ChatBodyCSS = {
-    background: ' linear-gradient(180deg, rgba(140,219,255,1) 0%, rgba(212,242,255,1) 10%, rgba(255,255,255,1) 73%, rgba(213,242,255,1) 100%)',
-}
-
 const ChatBodyStyle = Stylist.builder()
     .inMobile({
         display: Display.GRID,
@@ -15,7 +11,6 @@ const ChatBodyStyle = Stylist.builder()
                 template: 12
             }
         },
-        padding: 6,
         crossAxis: {
             items: Items.CENTER
         },
@@ -26,7 +21,7 @@ export interface ChatBodyProps extends SenderProps, AddresseeProps, MessagesProp
 
 const ChatBody: React.FC<ChatBodyProps> = (props: ChatBodyProps) => {
     return (
-        <div className={ChatBodyStyle} style={ChatBodyCSS}>
+        <div className={ChatBodyStyle}>
             <Addressee {...props} />
             <Messages {...props} />
             <Sender {...props} />

@@ -15,7 +15,7 @@ const ContactListStyle = Stylist.builder()
 const ContactList: React.FC<ContactListContainerProps> = (props: ContactListContainerProps) => {
     return (
         <div className={ContactListStyle}>
-            {props.items?.map((contact, index) => (
+            {props.contacts?.map((contact, index) => (
                 <Contact contact={contact} index={index} openChat={props.openChat} />
             ))}
         </div>
