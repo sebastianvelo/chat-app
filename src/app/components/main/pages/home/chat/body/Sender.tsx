@@ -7,9 +7,9 @@ const SenderAvatarStyle = Stylist.builder()
     .inMobile({
         grid: {
             column: {
-                span: 2
+                span: 1
             }
-        }
+        },
     })
     .build();
 

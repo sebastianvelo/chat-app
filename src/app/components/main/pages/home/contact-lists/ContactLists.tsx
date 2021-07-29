@@ -11,13 +11,13 @@ const ContactListsStyle = Stylist.builder()
     .build();
 
 const ContactListsCSS = {
-    height: '50vh',
+    height: '55vh',
     background: 'linear-gradient(180deg, rgba(62,179,234,1) 0%, rgba(219,241,251,1) 0%, rgba(230,245,252,1) 12%, rgba(255,255,255,1) 100%)',
 }
 
 export interface ConctactListsProps {
     contacts?: User[];
-    setAddressee: (user: User) => void;
+    openChat: (user: User) => void;
 }
 
 const ConctactLists: React.FC<ConctactListsProps> = (props: ConctactListsProps) => {
@@ -33,7 +33,7 @@ const ConctactLists: React.FC<ConctactListsProps> = (props: ConctactListsProps) 
     ]
     return (
         <div className={ContactListsStyle} style={ContactListsCSS}>
-            {lists.map((list, index) => <ContactListContainer {...list} key={index} setAddressee={props.setAddressee} />)}
+            {lists.map((list, index) => <ContactListContainer {...list} key={index} openChat={props.openChat} />)}
         </div>
     );
 }

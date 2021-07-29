@@ -11,7 +11,7 @@ const HeaderStyle = Stylist.builder()
         },
         padding: {
             x: 4,
-            y: 3,
+            y: 6,
         },
         crossAxis: {
             items: Items.STRETCH

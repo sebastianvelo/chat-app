@@ -7,9 +7,9 @@ const AddresseeAvatarStyle = Stylist.builder()
     .inMobile({
         grid: {
             column: {
-                span: 2
+                span: 1
             }
-        }
+        },
     })
     .build();
 
@@ -17,7 +17,7 @@ const AddresseeUserStyle = Stylist.builder()
     .inMobile({
         grid: {
             column: {
-                span: 10
+                span: 11
             }
         }
     })

@@ -3,6 +3,7 @@ enum Device {
     SMALL = 'sm:',
     MEDIUM = 'md:',
     LARGE = 'lg:',
-    XL = 'xl:'
+    XL = 'xl:',
+    XXL = '2xl:'
 }
 export default Device;

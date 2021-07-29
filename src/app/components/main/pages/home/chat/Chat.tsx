@@ -1,14 +1,10 @@
 import Window from "app/components/common/window/Window";
 import Nav, { NavProps } from "app/components/nav/Nav";
+import Message from "app/types/message/Message";
 import { User, UserLoggedIn } from "app/types/user/User";
+import { useState } from "react";
 import Stylist, { Color, Position, Radius, SimpleColor, Sizing } from "stylist/Stylist";
-import ChatBody, { ChatBodyProps } from "./body/ChatBody";
-
-export interface ChatProps extends ChatBodyProps {
-    chatNav: NavProps;
-    userLoggedIn: UserLoggedIn;
-    setAddressee: (addressee: User | undefined) => void;
-}
+import ChatBody from "./body/ChatBody";
 
 const ChatStyle = Stylist.builder()
     .inMobile({
@@ -29,12 +25,25 @@ const ChatStyle = Stylist.builder()
     })
     .build();
 
+export interface ChatProps {
+    chatNav: NavProps;
+    userLoggedIn: UserLoggedIn;
+    addressee: User;
+    openChat: (addressee?: User) => void;
+}
+
 const Chat: React.FC<ChatProps> = (props: ChatProps) => {
+    const [messages, setMessages] = useState<Message[]>([]);
+
+    const getMessages = () => {
+        return messages;
+    }
+
     return (
         <div className={ChatStyle}>
-            <Window close={() => props.setAddressee(undefined)} header={props.addressee.nick} />
+            <Window close={() => props.openChat()} header={props.addressee.nick} />
             <Nav {...props.chatNav} />
-            <ChatBody {...props} />
+            <ChatBody {...props} messages={getMessages()} />
         </div>
     );
 }

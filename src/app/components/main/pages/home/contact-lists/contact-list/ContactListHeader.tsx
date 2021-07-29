@@ -27,6 +27,7 @@ const ContactListTitleStyle = Stylist.builder()
     .inMobile({
         text: {
             weight: FontWeight.MEDIUM,
+            size: FontSize.SM,
             color: [Color.GRAY, 900]
         }
     })

@@ -104,144 +104,216 @@ const data: AppWidgetData = {
             info: 'Una Nueva Noche Fria - CJS!!!!!!! 🎵🎵🎵🎵',
             contacts: [
                 {
-                    avatar: "https://picsum.photos/200",
-                    nick: 'Carlos',
-                    status: '(Conectado)',
-                    info: 'CUMBIAAAA!!! 🎵',
+                  "nick": "Rose",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Laboris consectetur ex minim cillum reprehenderit aute est exercitation id consequat amet."
                 },
                 {
-                    avatar: "https://picsum.photos/200",
-                    nick: 'Raul',
-                    status: '(Conectado)',
-                    info: 'CUMBIAAAA!!! 🎵',
+                  "nick": "Mona",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Adipisicing Lorem mollit qui consequat nulla officia do."
                 },
                 {
-                    avatar: "https://picsum.photos/200",
-                    nick: 'Roberto',
-                    status: '(Conectado)',
-                    info: 'CUMBIAAAA!!! 🎵',
+                  "nick": "Kathie",
+                  "status": '(Conectado)',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Velit eiusmod aliquip nulla aliqua laborum enim amet."
                 },
                 {
-                    avatar: "https://picsum.photos/200",
-                    nick: 'Omar',
-                    status: '(Conectado)',
-                    info: 'CUMBIAAAA!!! 🎵',
+                  "nick": "Jeri",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Sunt consectetur cillum consectetur minim reprehenderit."
                 },
                 {
-                    avatar: "https://picsum.photos/200",
-                    nick: 'Esteban',
-                    status: '(Conectado)',
-                    info: 'CUMBIAAAA!!! 🎵',
+                  "nick": "Helen",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Minim cillum excepteur Lorem est pariatur consequat id laboris reprehenderit ipsum sit magna aute."
                 },
                 {
-                    avatar: "https://picsum.photos/200",
-                    nick: 'The Game',
-                    status: '(Conectado)',
-                    info: 'CUMBIAAAA!!! 🎵',
+                  "nick": "Barrett",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Tempor labore minim ullamco sint labore eu sunt do pariatur ea nulla est magna est."
                 },
                 {
-                    avatar: "https://picsum.photos/200",
-                    nick: 'Pepe 😎😎',
-                    status: '(Conectado)',
-                    info: 'CUMBIAAAA!!! 🎵',
+                  "nick": "Mathews",
+                  "status": '(Conectado)',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Do irure dolore sint reprehenderit nulla eu do laboris enim excepteur."
                 },
                 {
-                    avatar: "https://picsum.photos/200",
-                    nick: 'Carlos',
-                    status: '(Conectado)',
-                    info: 'CUMBIAAAA!!! 🎵',
+                  "nick": "Dollie",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Occaecat enim fugiat nostrud exercitation aliquip nulla reprehenderit reprehenderit laboris incididunt veniam ullamco pariatur."
                 },
                 {
-                    avatar: "https://picsum.photos/200",
-                    nick: 'Carlos',
-                    status: '(Conectado)',
-                    info: 'CUMBIAAAA!!! 🎵',
+                  "nick": "Wright",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Aliqua eiusmod non cupidatat dolor aute excepteur nostrud ex do minim."
                 },
                 {
-                    avatar: "https://picsum.photos/200",
-                    nick: 'Carlos',
-                    status: '(Conectado)',
-                    info: 'CUMBIAAAA!!! 🎵',
+                  "nick": "Mendoza",
+                  "status": '(Conectado)',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Officia sunt do excepteur elit elit eiusmod cillum."
                 },
                 {
-                    avatar: "https://picsum.photos/200",
-                    nick: 'Carlos',
-                    status: '(Conectado)',
-                    info: 'CUMBIAAAA!!! 🎵',
+                  "nick": "Nunez",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Qui non et tempor sit magna officia tempor."
                 },
                 {
-                    avatar: "https://picsum.photos/200",
-                    nick: 'Carlos',
-                    status: '(Conectado)',
-                    info: 'CUMBIAAAA!!! 🎵',
+                  "nick": "Isabella",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Velit dolore laboris commodo cillum."
                 },
                 {
-                    avatar: "https://picsum.photos/200",
-                    nick: 'Carlos',
-                    status: '(Conectado)',
-                    info: 'CUMBIAAAA!!! 🎵',
+                  "nick": "Rutledge",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Irure labore enim in adipisicing enim ea pariatur in do minim in incididunt dolor ullamco."
                 },
                 {
-                    avatar: "https://picsum.photos/200",
-                    nick: 'Carlos',
-                    status: '(Conectado)',
-                    info: 'CUMBIAAAA!!! 🎵',
+                  "nick": "Walker",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Ad ea non nulla cillum."
                 },
                 {
-                    avatar: "https://picsum.photos/200",
-                    nick: 'Carlos',
-                    status: '(Conectado)',
-                    info: 'CUMBIAAAA!!! 🎵',
+                  "nick": "Joni",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Do qui qui pariatur incididunt."
                 },
                 {
-                    avatar: "https://picsum.photos/200",
-                    nick: 'Carlos',
-                    status: '',
-                    info: 'CUMBIAAAA!!! 🎵',
+                  "nick": "Lewis",
+                  "status": '(Conectado)',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Quis quis voluptate eu in exercitation aliquip cupidatat Lorem."
                 },
                 {
-                    avatar: "https://picsum.photos/200",
-                    nick: 'Carlos',
-                    status: '',
-                    info: 'CUMBIAAAA!!! 🎵',
+                  "nick": "Mariana",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Nisi qui duis nulla proident pariatur voluptate Lorem ea elit velit enim."
                 },
                 {
-                    avatar: "https://picsum.photos/200",
-                    nick: 'Carlos',
-                    status: '',
-                    info: 'CUMBIAAAA!!! 🎵',
+                  "nick": "Fitzpatrick",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Est ex laboris culpa nulla sit nulla non officia eu est eu esse sunt esse."
                 },
                 {
-                    avatar: "https://picsum.photos/200",
-                    nick: 'Carlos',
-                    status: '',
-                    info: 'CUMBIAAAA!!! 🎵',
+                  "nick": "Tricia",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Consectetur mollit duis qui deserunt aute."
                 },
                 {
-                    avatar: "https://picsum.photos/200",
-                    nick: 'Carlos',
-                    status: '',
-                    info: 'CUMBIAAAA!!! 🎵',
+                  "nick": "Corina",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Reprehenderit excepteur elit ad aliquip nostrud et id."
                 },
                 {
-                    avatar: "https://picsum.photos/200",
-                    nick: 'Carlos',
-                    status: '',
-                    info: 'CUMBIAAAA!!! 🎵',
+                  "nick": "Williams",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Minim laboris culpa aliqua ex ut cupidatat."
                 },
                 {
-                    avatar: "https://picsum.photos/200",
-                    nick: 'Carlos',
-                    status: '',
-                    info: 'CUMBIAAAA!!! 🎵',
+                  "nick": "White",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Amet ut in Lorem voluptate reprehenderit eiusmod est irure minim ad nisi dolore adipisicing."
                 },
                 {
-                    avatar: "https://picsum.photos/200",
-                    nick: 'Carlos',
-                    status: '',
-                    info: 'CUMBIAAAA!!! 🎵',
+                  "nick": "Dodson",
+                  "status": '(Conectado)',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Occaecat eu consectetur esse ullamco eiusmod anim magna in nisi do ad consequat."
                 },
-            ]
+                {
+                  "nick": "Iva",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Minim veniam eiusmod irure sunt minim occaecat amet irure id nostrud officia duis aliqua do."
+                },
+                {
+                  "nick": "Susana",
+                  "status": '(Conectado)',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Deserunt cillum veniam voluptate sunt est excepteur deserunt ullamco adipisicing minim reprehenderit sint est id."
+                },
+                {
+                  "nick": "Roslyn",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Fugiat velit ut aliqua et qui nisi do et enim duis elit nostrud sit."
+                },
+                {
+                  "nick": "Goodman",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Reprehenderit cillum aliquip eiusmod duis pariatur ullamco sit."
+                },
+                {
+                  "nick": "Marcella",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Incididunt sit reprehenderit amet occaecat nulla amet quis culpa."
+                },
+                {
+                  "nick": "Tameka",
+                  "status": '(Conectado)',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Velit fugiat nostrud commodo id reprehenderit veniam ex consectetur velit amet amet nisi sint consectetur."
+                },
+                {
+                  "nick": "Cooley",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Ad incididunt irure non voluptate consequat anim nisi est pariatur."
+                },
+                {
+                  "nick": "Melisa",
+                  "status": '(Conectado)',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Do commodo labore veniam irure laborum sit cillum irure et enim adipisicing quis aliqua est."
+                },
+                {
+                  "nick": "Ethel",
+                  "status": '(Conectado)',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Consequat Lorem est deserunt laboris qui sit tempor proident exercitation adipisicing in."
+                },
+                {
+                  "nick": "Mack",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Cillum ut excepteur in anim dolor sint officia do quis labore sunt."
+                },
+                {
+                  "nick": "Leonor",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Ut sunt quis esse aliqua nisi dolor proident commodo tempor ex."
+                },
+                {
+                  "nick": "Berg",
+                  "status": '',
+                  "avatar": "https://picsum.photos/200",
+                  "info": "Non do cillum enim incididunt reprehenderit id deserunt voluptate magna incididunt reprehenderit."
+                }
+              ]
         },
         ads: '¿Querés tu Iphone 3G HOY?!!!!'
     },

@@ -16,7 +16,7 @@ const FooterStyle = Stylist.builder()
     .build();
 
 const FooterCSS = {
-    minHeight: '35vh',
+    minHeight: '30vh',
     background: 'linear-gradient(180deg, rgba(62,179,234,1) 0%, rgba(219,241,251,1) 0%, rgba(202,231,243,1) 100%, rgba(255,255,255,1) 100%)',
 }
 

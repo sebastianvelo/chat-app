@@ -5,7 +5,7 @@ import ContactListHeader from "./ContactListHeader";
 export interface ContactListContainerProps {
     title: string;
     items?: User[];
-    setAddressee: (user: User) => void;
+    openChat: (user: User) => void;
 }
 
 const ContactListContainer: React.FC<ContactListContainerProps> = (props: ContactListContainerProps) => {
