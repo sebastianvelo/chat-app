@@ -1,5 +1,4 @@
 import Input from "app/components/common/input/Input";
-import Message from "app/types/message/Message";
 import { UserLoggedIn } from "app/types/user/User";
 import { useState } from "react";
 import Stylist, { Color, Display, Items, SimpleColor, Sizing } from "stylist/Stylist";
@@ -24,18 +23,13 @@ const SenderCSS = {
     background: 'linear-gradient(180deg, rgba(238,249,250,1) 0%, #c3ebff 50%, rgba(238,249,250,1) 100%)',
 }
 
-const SenderAvatarStyle = Stylist.builder()
-    .inMobile({
-        padding: {
-            right: 10
-        }
-    })
-    .build();
-
 const SenderChatboxStyle = Stylist.builder()
     .inMobile({
         crossAxis: {
             items: Items.CENTER
+        },
+        padding: {
+            left: 6,
         },
         display: Display.FLEX,
         width: Sizing.FULL
@@ -81,7 +75,7 @@ const Sender: React.FC<SenderProps> = (props: SenderProps) => {
 
     return (
         <div className={SenderStyle} style={SenderCSS}>
-            <div className={SenderAvatarStyle} >
+            <div>
                 <Avatar src={props.userLoggedIn.avatar} />
             </div>
             <div className={SenderChatboxStyle}>
