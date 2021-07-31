@@ -21,9 +21,6 @@ const InputStyle = Stylist.builder()
     .focus({
         outline: 'outline-none' //TODO FIX THIS
     })
-    .dark({
-        borderColor: [Color.INDIGO, 200],
-    })
     .build();
 
 export interface InputProps {
@@ -33,10 +30,11 @@ export interface InputProps {
     placeholder?: string;
     required?: boolean;
     onChange: OnChange;
+    onKeyUp?: (event: any) => void;
 }
 
 const Input: React.FC<InputProps> = (props: InputProps) => {
-    return (<input className={InputStyle} {...props} onChange={(e: any) => props.onChange(e.target.value, props.name)} />);
+    return (<input {...props} onKeyUp={(e) => props.onKeyUp && props.onKeyUp(e)} className={InputStyle} onChange={(e: any) => props.onChange(e.target.value, props.name)} />);
 }
 
 export default Input;

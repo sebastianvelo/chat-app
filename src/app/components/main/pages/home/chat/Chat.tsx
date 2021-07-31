@@ -1,8 +1,7 @@
 import Window from "app/components/common/window/Window";
-import Nav, { NavProps } from "app/components/nav/Nav";
 import Message from "app/types/message/Message";
 import { User, UserLoggedIn } from "app/types/user/User";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Stylist, { Color, Position, Radius, SimpleColor, Sizing } from "stylist/Stylist";
 import ChatBody from "./body/ChatBody";
 
@@ -34,14 +33,25 @@ export interface ChatProps {
 const Chat: React.FC<ChatProps> = (props: ChatProps) => {
     const [messages, setMessages] = useState<Message[]>([]);
 
-    const getMessages = () => {
-        return messages;
+    const saveMessage = (message: string, sender: User = props.userLoggedIn, addressee: UserLoggedIn = props.addressee) => {
+        setMessages([...messages, {
+            message: message,
+            addressee: addressee,
+            sender: sender,
+            time: new Date().toLocaleString(),
+        },
+        {
+            message: 'Hola, no soy un bot inteligente :(',
+            addressee: sender,
+            sender: addressee,
+            time: new Date().toLocaleString(),
+        }]);
     }
 
     return (
         <div className={ChatStyle}>
             <Window close={() => props.openChat()} header={'Windows Live Messenger - ' + props.addressee.nick} />
-            <ChatBody {...props} messages={getMessages()} />
+            <ChatBody {...props} messages={messages} saveMessage={saveMessage}/>
         </div>
     );
 }

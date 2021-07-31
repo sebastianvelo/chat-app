@@ -131,7 +131,7 @@ export type MaxHeightValue = SizeNumber | Sizing.FULL | Sizing.SCREEN;
 export type HeightValue = SizeNumber | Sizing;
 //----------------------------------------------------------------
 //Border
-export type BorderWidth = 0 | 2 | 4 | 8;
+export type BorderWidth = 0 | 1 | 2 | 4 | 8;
 export type BorderSide = BorderWidth | [BorderWidth, Radius];
 export enum BorderStyle {
     SOLID = 'solid',

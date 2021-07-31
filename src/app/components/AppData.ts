@@ -60,8 +60,8 @@ const data: AppWidgetData = {
             },
         ],
         userLoggedIn: {
-            avatar: "https://pbs.twimg.com/media/BHYpVqTCEAAgTCt.jpg",
-            nick: '[b] Sébástíán...... 😎 [ /b]',
+            avatar: "https://alponiente.com/wp-content/uploads/2018/06/livemessenger-696x556.jpg",
+            nick: '[b] Lorem Ipsum...... 😎 [ /b]',
             status: '(Conectado)',
             info: 'Una Nueva Noche Fria - CJS!!!!!!! 🎵🎵🎵🎵',
             contacts: [
