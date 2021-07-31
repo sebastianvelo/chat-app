@@ -60,7 +60,7 @@ const data: AppWidgetData = {
             },
         ],
         userLoggedIn: {
-            avatar: "https://alponiente.com/wp-content/uploads/2018/06/livemessenger-696x556.jpg",
+            avatar: "https://picsum.photos/id/237/200/300",
             nick: '[b] Lorem Ipsum...... 😎 [ /b]',
             status: '(Conectado)',
             info: 'Una Nueva Noche Fria - CJS!!!!!!! 🎵🎵🎵🎵',
