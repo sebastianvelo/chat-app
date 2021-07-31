@@ -17,8 +17,12 @@ export interface NavLabelProps {
 }
 
 const NavLabel: React.FC<NavLabelProps> = (props: NavLabelProps) => {
+    const closeAllDetails = () => {
+        const details = Array.from(document.querySelectorAll('nav details'));
+        details.forEach(detail => detail.removeAttribute("open"));
+    }
     return (
-        <summary className={NavItemStyle}>
+        <summary className={NavItemStyle} onClick={closeAllDetails}>
             <h1>{props.label}</h1>
         </summary>
     );

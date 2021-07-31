@@ -63,8 +63,10 @@ const Sender: React.FC<SenderProps> = (props: SenderProps) => {
     const [message, setMessage] = useState<string>('');
 
     const saveMessage = (message: string) => {
-        props.saveMessage(message);
-        setMessage('');
+        if(message) {  
+            props.saveMessage(message);
+            setMessage('');
+        }
     }
 
     const handleKeyUp = (event: KeyboardEvent) => {
