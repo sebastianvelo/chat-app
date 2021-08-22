@@ -32,9 +32,9 @@ export interface AdsProps {
 
 const Ads: React.FC<AdsProps> = (props: AdsProps) => {
     return (
-        <div className={AdsStyle}>
+        <a className={AdsStyle} href={`https://www.linkedin.com/in/sebastian-velo/`}>
             {props.ads}
-        </div>
+        </a>
     );
 }
 
